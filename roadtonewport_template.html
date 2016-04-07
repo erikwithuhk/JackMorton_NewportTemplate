@@ -146,6 +146,10 @@
     font-family: arial, helvetica, sans-serif;
   }
 
+  #header {
+    padding-top: 25px;
+  }
+
   .header-image {
     background-color:#333d47;
     color: #ffffff;
@@ -157,32 +161,24 @@
     width: 600px;
   }
 
-  #body {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-  }
-
-  .body-padding-20-LR {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .padding-top-25 {
-    padding-top: 25px;
-  }
-
   .text {
     mso-line-height-rule: exactly;
     -webkit-text-size-adjust: none;
   }
 
-  .full-width-text, .section-description, .divider {
+  .intro-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .body-text {
     font-size: 16px;
     font-weight: normal;
     line-height: 25px;
     text-align: left;
+    padding-top: 25px;
   }
 
   .section-header {
@@ -315,7 +311,7 @@
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="center" valign="top">
-                    <img src="images/newport_header_600x200.jpg" alt="The road to Newport: 2016 Newport Leadership Meeting" border="0" class="header-image" width="600" height="20" />
+                    <img src="images/newport_header_600x200.jpg" alt="The road to Newport: 2016 Newport Leadership Meeting" border="0" class="header-image" width="600" height="200"/>
                   </td>
                 </tr>
               </table>
@@ -323,139 +319,25 @@
           </tr>
 
           <tr>
-            <td align="center" valign="top" id="">
+            <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top">
+                  <td align="center" valign="top" class="text intro-text">
+                    Intro text | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor.
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <tr mc:repeatable="content" mc:variant="full-width-text">
-            <td align="center" valign="top" class="body-padding-20-LR">
+          <tr>
+            <td align="center" valign="top">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="text padding-top-25 full-width-text" mc:edit="full-width-text" mc:label="Full-width text">
-                    Full-width text | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="section-header">
-            <td align="center" valign="top" class="body-padding-20-LR">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text padding-top-25 section-header" mc:edit="section-header" mc:label="Section header">
-                    Section header
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="section-description">
-            <td align="center" valign="top" class="body-padding-20-LR">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text section-description" mc:edit="section-description" mc:label="Section description">
-                    Section description text | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="course-with-image">
-            <td align="center" valign="top" class="course body-padding-20-LR">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="course-background">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="left" valign="top" class="text course-title" mc:edit="course-title-with-image" mc:label="Course title">
-                          Course title
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="left" valign="top" style="padding-top:15px;">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td align="left" valign="top" class="text course-image">
-                                <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/71c863d4-b791-4c8e-8f73-c13599c2e70d.jpg" alt="" border="0" height="160" width="160" mc:edit="course-image" mc:label="Course image">
-                              </td>
-                              <td align="left" valign="top" class="text course-image-description" mc:edit="course-image-description" mc:label="Course description with image">
-                                Course description | Arial / type 12px / leading 20px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus. Duis in ex sagittis, euismod mauris sed, fermentum turpis. Phasellus lacinia ante eros, ut auctor velit feugiat et. Phasellus volutpat placerat velit a laoreet. Proin semper leo non elementum malesuada. Sed ut molestie lectus. Curabitur mattis libero sit amet lorem laoreet ultricies.
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" valign="top" class="button" style="padding-top:15px;">
-                          <table align="right" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                              <td align="center" valign="middle" class="button-text" mc:edit="button-text" mc:label="Button text">
-                                <a href="#" target="_blank">Call to action</a>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="divider">
-            <td align="center" valign="top" style="padding-left: 120px; padding-right: 120px;">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text divider" mc:label="Divider">
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="course-noimage">
-            <td align="center" valign="top" class="course body-padding-20-LR">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="course-background">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="center" valign="top">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td align="left" valign="top" class="text course-title" mc:edit="course-title-without-image" mc:label="Course title">
-                                Course title
-                              </td>
-                            </tr>
-                            <tr>
-                              <td align="left" valign="top" class="text course-noimage-description" mc:edit="course-noimage-description" mc:label="Course description without image">
-                                Course description | Arial / type 12px / leading 20px
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="center" valign="top" class="button" padding-left:200px;>
-                          <table align="right" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                              <td align="center" valign="middle" class="button-text" mc:edit="button-text" mc:label="Button text">
-                                <a href="#" target="_blank">Call to action</a>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
+                  <td align="center" valign="top" class="text body-text">
+                    Body text | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.<br>
+                    <br>
+                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
                   </td>
                 </tr>
               </table>
